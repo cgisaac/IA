@@ -1,46 +1,18 @@
-# Dependencies
-vendor/
-
-# Logs
+```
+# Logs and temp files
 *.log
-logs/
-tmp/
+*.tmp
+*.swp
 
 # Environment
 .env
 .env.local
 .env.*
 
-# Cache
-.cache/
-*.cache
-
-# IDE
+# Editors
 .vscode/
 .idea/
-*.swp
-*.swo
 
-# OS
-.DS_Store
-Thumbs.db
-
-# Build
-build/
-dist/
-target/
-
-# PHP specific
-*.php~
-*.bak
-.htaccess.bak
-
-# Coverage
-coverage/
-htmlcov/
-.coverage
-
-# Temporary files
-*.tmp
-temp/
-tmp/
+# Original rules preserved
+*.log
+```
