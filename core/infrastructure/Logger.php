@@ -1,6 +1,6 @@
 <?php
 
-namespace GestaoTI\Core\Infrastructure;
+namespace Core\Infrastructure;
 
 /**
  * Classe Logger - Gerencia logs da aplicação

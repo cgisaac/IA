@@ -1,8 +1,8 @@
 <?php
 
-namespace GestaoTI\Core\MVC\Controller;
+namespace Core\MVC\Controller;
 
-use GestaoTI\Core\Database\Database;
+use Core\Database\Database;
 
 /**
  * Controller de Configurações do Sistema

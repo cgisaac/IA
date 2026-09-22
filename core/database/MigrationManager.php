@@ -1,6 +1,6 @@
 <?php
 
-namespace GestaoTI\Core\Database;
+namespace Core\Database;
 
 use Exception;
 

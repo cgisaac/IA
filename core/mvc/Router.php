@@ -42,7 +42,7 @@ class Router
             }
             $controllerName .= 'Controller';
             
-            $controllerClass = "GestaoTI\\Core\\MVC\\Controller\\{$controllerName}";
+            $controllerClass = "Core\\MVC\\Controller\\{$controllerName}";
             
             if (class_exists($controllerClass)) {
                 $this->routes[$route] = [

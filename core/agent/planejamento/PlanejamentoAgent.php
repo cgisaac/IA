@@ -1,8 +1,8 @@
 <?php
 
-namespace GestaoTI\Agent\Planejamento;
+namespace Core\Agent\Planejamento;
 
-use GestaoTI\Core\Database\Database;
+use Core\Database\Database;
 use Exception;
 
 /**

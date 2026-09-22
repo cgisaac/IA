@@ -1,9 +1,9 @@
 <?php
 
-namespace GestaoTI\Agent\Infra;
+namespace Core\Agent\Infra;
 
-use GestaoTI\Core\Database\Database;
-use GestaoTI\Core\Database\MigrationManager;
+use Core\Database\Database;
+use Core\Database\MigrationManager;
 use Exception;
 use PDOException;
 
