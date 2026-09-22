@@ -13,7 +13,12 @@ __pycache__/
 
 # Dependencies
 vendor/
-composer.lock
+node_modules/
+venv/
+.venv/
+.env
+.env.local
+*.env.*
 
 # Logs and temp files
 *.log
@@ -21,14 +26,13 @@ composer.lock
 *.swp
 *.swo
 
-# Environment
-.env
-.env.local
-.env.*
-
 # Editors
 .vscode/
 .idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
 
 # Build and distribution
 dist/
@@ -37,10 +41,6 @@ target/
 coverage/
 htmlcov/
 .coverage
-
-# OS specific
-.DS_Store
-Thumbs.db
 
 # Cache directories
 .cache/
