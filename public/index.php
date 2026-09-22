@@ -16,6 +16,9 @@ require_once __DIR__ . '/../core/Autoloader.php';
 // Carrega funções auxiliares
 require_once __DIR__ . '/../config/functions.php';
 
+// Imports de classes
+use GestaoTI\Core\Infrastructure\Logger;
+
 // Inicia sessão se não estiver iniciada
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
@@ -26,7 +29,6 @@ try {
     $config = getConfig();
     
     // Inicializa logger
-    use GestaoTI\Core\Infrastructure\Logger;
     $logger = Logger::getInstance();
     $logger->info('Aplicação iniciada - Route: ' . ($_GET['route'] ?? 'login'));
     
@@ -42,7 +44,6 @@ try {
 } catch (\Exception $e) {
     // Tenta obter logger
     try {
-        use GestaoTI\Core\Infrastructure\Logger;
         $logger = Logger::getInstance();
         $logger->error('Erro na aplicação', $e);
     } catch (\Throwable $t) {
