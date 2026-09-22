@@ -1,8 +1,8 @@
 <?php
 
-namespace GestaoTI\Core\MVC\Controller;
+namespace Core\MVC\Controller;
 
-use GestaoTI\Core\Infrastructure\Logger;
+use Core\Infrastructure\Logger;
 
 /**
  * Controller de Logs - Visualização de logs do sistema

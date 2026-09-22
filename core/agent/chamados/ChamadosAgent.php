@@ -1,9 +1,9 @@
 <?php
 
-namespace GestaoTI\Agent\Chamados;
+namespace Core\Agent\Chamados;
 
-use GestaoTI\Core\Database\Database;
-use GestaoTI\Agent\Infra\InfraAgent;
+use Core\Database\Database;
+use Core\Agent\Infra\InfraAgent;
 use Exception;
 
 /**

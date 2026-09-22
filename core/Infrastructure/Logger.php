@@ -1,5 +1,5 @@
 <?php
-namespace GestaoTI\Core\Infrastructure;
+namespace Core\Infrastructure;
 
 /**
  * Logger da aplicação

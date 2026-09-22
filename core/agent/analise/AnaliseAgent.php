@@ -1,10 +1,10 @@
 <?php
 
-namespace GestaoTI\Agent\Analise;
+namespace Core\Agent\Analise;
 
-use GestaoTI\Core\Database\Database;
-use GestaoTI\Agent\Chamados\ChamadosAgent;
-use GestaoTI\Agent\Tempo\TempoAgent;
+use Core\Database\Database;
+use Core\Agent\Chamados\ChamadosAgent;
+use Core\Agent\Tempo\TempoAgent;
 use Exception;
 
 /**
@@ -430,7 +430,7 @@ class AnaliseAgent {
             $recentActivities = $result->fetchAll();
 
             // Tarefas do dia
-            $planejamentoAgent = new \GestaoTI\Agent\Planejamento\PlanejamentoAgent();
+            $planejamentoAgent = new \Core\Agent\Planejamento\PlanejamentoAgent();
             $todaysTasks = $planejamentoAgent->getTodaysTasks();
 
             return [

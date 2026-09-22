@@ -1,8 +1,8 @@
 <?php
 
-namespace GestaoTI\Agent\Tempo;
+namespace Core\Agent\Tempo;
 
-use GestaoTI\Core\Database\Database;
+use Core\Database\Database;
 use Exception;
 
 /**
