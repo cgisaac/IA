@@ -12,13 +12,12 @@ __pycache__/
 *.out
 
 # Dependencies
-vendor/
 node_modules/
 venv/
 .venv/
 .env
 .env.local
-*.env.*
+.env.*
 
 # Logs and temp files
 *.log
@@ -30,21 +29,25 @@ venv/
 .vscode/
 .idea/
 
-# OS generated files
+# System files
 .DS_Store
 Thumbs.db
 
-# Build and distribution
-dist/
-build/
-target/
+# Coverage
 coverage/
 htmlcov/
 .coverage
 
-# Cache directories
-.cache/
+# Build directories
+dist/
+build/
+target/
+.gradle/
+
+# Python specific
 .mypy_cache/
 .pytest_cache/
-.gradle/
+
+# Web assets (if they're build artifacts)
+public/assets/css/style.css
 ```

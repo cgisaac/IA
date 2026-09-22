@@ -1,0 +1,102 @@
+=============================================================================
+ESTRUTURA COMPLETA DE PASTAS - GESTÃO TI
+Copie esta estrutura para: C:\xampp\htdocs\IA\
+=============================================================================
+
+C:\xampp\htdocs\IA\
+│
+├── config/
+│   ├── config.php          (Configurações do banco e sistema)
+│   └── functions.php       (Funções auxiliares)
+│
+├── core/
+│   └── GestaoTI/
+│       ├── Core/
+│       │   ├── Autoloader.php
+│       │   └── Infrastructure/
+│       │       ├── Database.php
+│       │       └── Logger.php
+│       │
+│       ├── MVC/
+│       │   ├── Router.php
+│       │   ├── Controller.php
+│       │   ├── View.php
+│       │   ├── Controllers/
+│       │   │   ├── AuthController.php
+│       │   │   ├── DashboardController.php
+│       │   │   ├── GerencialController.php
+│       │   │   ├── AcompanhamentoController.php
+│       │   │   ├── TecnicoController.php
+│       │   │   ├── ConfigController.php
+│       │   │   └── LogsController.php
+│       │   └── views/              <-- ATENÇÃO: pasta "views" minúsculo
+│       │       ├── auth/
+│       │       │   └── login.php
+│       │       ├── dashboard/
+│       │       │   ├── gerencial.php
+│       │       │   └── acompanhamento.php
+│       │       ├── tecnicos/
+│       │       │   └── app.php
+│       │       ├── config/
+│       │       │   └── index.php
+│       │       └── logs/
+│       │           └── index.php
+│       │
+│       └── Agent/
+│           ├── InfraAgent.php
+│           ├── ChamadosAgent.php
+│           ├── TempoAgent.php
+│           ├── PlanejamentoAgent.php
+│           └── AnaliseAgent.php
+│
+├── public/
+│   ├── index.php           (Ponto de entrada principal)
+│   ├── test.php            (Script de diagnóstico)
+│   └── .htaccess           (Rewrite rules)
+│
+└── storage/                <-- CRIE ESTA PASTA MANUALMENTE!
+    └── logs/               <-- CRIE ESTA PASTA MANUALMENTE!
+        └── (app.log será criado automaticamente)
+
+=============================================================================
+PASSOS PARA INSTALAÇÃO NO XAMPP:
+=============================================================================
+
+1. Crie a pasta base:
+   C:\xampp\htdocs\IA\
+
+2. Copie TODAS as pastas listadas acima para dentro de IA\
+
+3. CRIE MANUALMENTE as pastas:
+   C:\xampp\htdocs\IA\storage\
+   C:\xampp\htdocs\IA\storage\logs\
+
+4. Configure o banco em config/config.php:
+   - DB_HOST = localhost
+   - DB_NAME = gestao_ti
+   - DB_USER = root
+   - DB_PASS = (vazio no XAMPP)
+
+5. No navegador, acesse:
+   http://localhost/IA/public/
+
+6. Login padrão:
+   Usuário: admin
+   Senha: gestaoti2024
+
+=============================================================================
+ARQUIVOS CRÍTICOS QUE DEVEM EXISTIR:
+=============================================================================
+
+✅ core/GestaoTI/Core/Autoloader.php
+✅ core/GestaoTI/Core/Infrastructure/Logger.php
+✅ core/GestaoTI/Core/Infrastructure/Database.php
+✅ core/GestaoTI/MVC/Router.php
+✅ core/GestaoTI/MVC/Controllers/AuthController.php
+✅ core/GestaoTI/MVC/views/auth/login.php  (pasta views MINÚSCULO)
+✅ public/index.php
+✅ public/test.php
+✅ config/config.php
+✅ storage/logs/ (pasta criada manualmente)
+
+=============================================================================
