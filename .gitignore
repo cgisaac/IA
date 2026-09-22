@@ -42,4 +42,12 @@ htmlcov/
 dist/
 build/
 target/
+.gradle/
+
+# Python specific
+.mypy_cache/
+.pytest_cache/
+
+# Web assets (if they're build artifacts)
+public/assets/css/style.css
 ```
