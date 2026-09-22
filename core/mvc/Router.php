@@ -42,7 +42,7 @@ class Router
             }
             $controllerName .= 'Controller';
             
-            $controllerClass = "Core\\MVC\\Controller\\{$controllerName}";
+            $controllerClass = "GestaoTI\\Core\\MVC\\Controller\\{$controllerName}";
             
             if (class_exists($controllerClass)) {
                 $this->routes[$route] = [
@@ -113,7 +113,15 @@ $router->addRoute('tecnico_quick_open', Core\MVC\Controller\TecnicoController::c
 $router->addRoute('tecnico_new_tickets', Core\MVC\Controller\TecnicoController::class, 'apiNewTickets');
 $router->addRoute('tecnico_current_attendance', Core\MVC\Controller\TecnicoController::class, 'apiCurrentAttendance');
 
-// Configurações (será implementado)
+// Configurações
 $router->addRoute('config', Core\MVC\Controller\ConfigController::class, 'index');
+$router->addRoute('config_save', Core\MVC\Controller\ConfigController::class, 'save');
+$router->addRoute('config_test_glpi', Core\MVC\Controller\ConfigController::class, 'testGlpi');
+
+// Logs
+$router->addRoute('logs', Core\MVC\Controller\LogsController::class, 'index');
+$router->addRoute('logs_view', Core\MVC\Controller\LogsController::class, 'view');
+$router->addRoute('logs_clear', Core\MVC\Controller\LogsController::class, 'clear');
+$router->addRoute('logs_download', Core\MVC\Controller\LogsController::class, 'download');
 
 return $router;
